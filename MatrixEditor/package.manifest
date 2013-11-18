@@ -1,0 +1,41 @@
+{
+    propertyEditors: [
+        {
+		alias: "Nibble.MatrixEditor",
+		name: "Matrix",
+		editor: {
+		view: "~/App_Plugins/MatrixEditor/matrixeditor.html"
+		},
+		prevalues: {
+			fields: [
+				{
+					label: "Number of columns",
+					description: "Enter the number of columns",
+					key: "cols",
+					view: "requiredfield",
+					validation: [
+						{
+							type: "Required" 
+						}						
+					]
+				},
+				{
+					label: "Number of rows",
+					description: "Enter the number of rows",
+					key: "rows",
+					view: "requiredfield",
+					validation: [
+						{
+							type: "Required" 
+						}						
+					]
+				}				
+			]
+		}
+        }
+    ]
+    ,
+    javascript: [
+        '~/App_Plugins/MatrixEditor/matrixeditor.controller.js'
+    ]
+}
