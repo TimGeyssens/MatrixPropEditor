@@ -4,7 +4,8 @@
 		alias: "Nibble.MatrixEditor",
 		name: "Matrix",
 		editor: {
-		view: "~/App_Plugins/MatrixEditor/matrixeditor.html"
+		view: "~/App_Plugins/MatrixEditor/matrixeditor.html",
+		valueType: "JSON"
 		},
 		prevalues: {
 			fields: [
