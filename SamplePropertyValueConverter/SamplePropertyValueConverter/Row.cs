@@ -8,5 +8,10 @@ namespace SamplePropertyValueConverter
     public class Row
     {
         public IEnumerable<string> Values { get; set; }
+
+        public Row()
+        {
+            Values = new List<string>();
+        }
     }
 }

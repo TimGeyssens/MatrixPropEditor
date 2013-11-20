@@ -28,10 +28,10 @@ namespace SamplePropertyValueConverter
             {
                 try
                 {
-                    var obj = JsonConvert.DeserializeObject(sourceString);
-
+                    var obj = JsonConvert.DeserializeObject<string[][]>(sourceString);
                     var matrix = new Matrix();
-
+                    var rows = obj.Select(r => new Row {Values = r.ToList()}).ToList();
+                    matrix.Rows = rows;
                     return matrix;
                 }
                 catch (Exception ex)

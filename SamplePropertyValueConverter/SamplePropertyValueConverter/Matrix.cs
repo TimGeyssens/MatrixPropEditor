@@ -8,5 +8,10 @@ namespace SamplePropertyValueConverter
     public class Matrix
     {
         public IEnumerable<Row> Rows { get; set; }
+
+        public Matrix()
+        {
+            Rows = new List<Row>();
+        }
     }
 }
