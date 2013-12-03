@@ -1,0 +1,16 @@
+<div ng-controller="Nibble.MatrixLabelEditor" class="matrix-label-editor">
+ 	<div>
+			<h6>Column labels</h6>
+			<div  ng-repeat="label in model.value.collabels track by $id($index)" class="lbl-cont">
+				<input type="text" ng-model="model.value.collabels[$index]"/>
+			</div >
+ 	</div>
+ 	<div>
+ 		<h6>Row labels</h6>
+ 		<div ng-repeat="label in model.value.rowlabels track by $id($index)" class="lbl-cont">
+			<input type="text" ng-model="model.value.rowlabels[$index]"/>
+ 		</div>
+ 	</div>
+
+
+</div>

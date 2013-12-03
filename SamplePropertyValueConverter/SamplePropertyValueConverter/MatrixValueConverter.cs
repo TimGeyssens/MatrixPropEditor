@@ -42,7 +42,5 @@ namespace SamplePropertyValueConverter
 
             return sourceString;
         }
-
-        
     }
 }

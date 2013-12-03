@@ -2,8 +2,18 @@ angular.module("umbraco")
     .controller("Nibble.MatrixEditor",
     function ($scope) {
 
+
+
+		var rows = 2;
+
+		var cols = 2;
+
+		if($scope.model.config != null){
+		if($scope.model.config.rows != null){rows = parseInt($scope.model.config.rows)}
+		if($scope.model.config.cols != null){rows = parseInt($scope.model.config.cols)}
+		}
 		 if (!$scope.model.value) {
-			$scope.model.value = createArray(parseInt($scope.model.config.rows), parseInt($scope.model.config.cols));
+			$scope.model.value = createArray(rows, cols);
          }
 
 

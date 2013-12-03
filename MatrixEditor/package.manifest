@@ -13,7 +13,7 @@
 					label: "Number of columns",
 					description: "Enter the number of columns",
 					key: "cols",
-					view: "requiredfield",
+					view: "number",
 					validation: [
 						{
 							type: "Required" 
@@ -24,19 +24,33 @@
 					label: "Number of rows",
 					description: "Enter the number of rows",
 					key: "rows",
-					view: "requiredfield",
+					view: "number",
 					validation: [
 						{
 							type: "Required" 
 						}						
 					]
-				}				
+				},
+				{
+					label: "Labels",
+					description: "Enter the labels for the cols/rows",
+					key: "rowheaders",
+					view: "~/App_Plugins/MatrixEditor/matrixlabeleditor.html",
+					
+				}			
 			]
 		}
-        }
+        },
+        
+        
     ]
     ,
     javascript: [
-        '~/App_Plugins/MatrixEditor/matrixeditor.controller.js'
+        '~/App_Plugins/MatrixEditor/matrixeditor.controller.js',
+        '~/App_Plugins/MatrixEditor/matrixlabeleditor.controller.js'
+    ],
+    css: [
+        '~/App_Plugins/MatrixEditor/matrixlabeleditor.css'
     ]
+    
 }

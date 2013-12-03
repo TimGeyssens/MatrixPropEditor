@@ -1,6 +1,10 @@
 <div ng-controller="Nibble.MatrixEditor">
  	<table>
-
+		<thead>
+		    <tr>
+		      <th ng-repeat="head in model.config.rowheaders.collabels">{{head}}</th>
+		    </tr>
+  		</thead>
         <tbody>
             <tr ng-repeat="row in model.value">
                 <td ng-repeat="col in row  track by $id($index)">
