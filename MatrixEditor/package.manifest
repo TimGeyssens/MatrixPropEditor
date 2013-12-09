@@ -36,6 +36,12 @@
 					description: "Let user add/remove rows",
 					key: "addrows",
 					view: "boolean"
+				},
+				{
+					label: "Show row labels",
+					description: "Show label for each row",
+					key: "rowlabels",
+					view: "boolean"
 				},				
 				{
 					label: "Labels",

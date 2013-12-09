@@ -10,7 +10,7 @@ angular.module("umbraco")
 
 		if($scope.model.config != null){
 		if($scope.model.config.rows != null){rows = parseInt($scope.model.config.rows)}
-		if($scope.model.config.cols != null){rows = parseInt($scope.model.config.cols)}
+		if($scope.model.config.cols != null){cols = parseInt($scope.model.config.cols)}
 		}
 		 if (!$scope.model.value) {
 			$scope.model.value = createArray(rows, cols);

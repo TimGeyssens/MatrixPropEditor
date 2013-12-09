@@ -2,13 +2,19 @@
  	<table>
 		<thead>
 		    <tr>
+		      <th ng-show="model.config.rowlabels"></th>
 		      <th ng-repeat="head in model.config.rowheaders.collabels">{{head}}</th>
 		    </tr>
   		</thead>
         <tbody>
             <tr ng-repeat="row in model.value">
+            	<td ng-show="model.config.rowlabels">
+            		{{model.config.rowheaders.rowlabels[$index]}}
+            	</td>
+
                 <td ng-repeat="col in row  track by $id($index)">
-                	 <input type="text" ng-model="row[$index]"></td>
+                	 <input type="text" ng-model="row[$index]">
+                </td>
                	<td ng-show="model.config.addrows">
 					<a href="#" prevent-default="" ng-click="removeRow($index)">
 						<i class="icon icon-delete red hover-show"></i>
