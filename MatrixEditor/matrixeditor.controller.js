@@ -16,6 +16,9 @@ angular.module("umbraco")
 			$scope.model.value = createArray(rows, cols);
          }
 
+		$scope.addRow = function(){
+			$scope.model.value.push(createArray(cols))
+		}
 
 		 function createArray(length) {
 		     var arr = new Array(length || 0),
@@ -28,5 +31,7 @@ angular.module("umbraco")
 
 		     return arr;
 		}
+
+
 
     });

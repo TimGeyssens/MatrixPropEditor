@@ -32,6 +32,12 @@
 					]
 				},
 				{
+					label: "Add rows",
+					description: "Let user add rows",
+					key: "addrows",
+					view: "boolean"
+				},				
+				{
 					label: "Labels",
 					description: "Enter the labels for the cols/rows",
 					key: "rowheaders",

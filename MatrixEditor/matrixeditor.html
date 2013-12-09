@@ -12,4 +12,12 @@
             </tr>
         </tbody>
     </table>
+    <ul class="unstyled list-icons" ng-show="model.config.addrows">
+		<li>
+			<i class="icon icon-add blue"></i>
+			<a href="#" ng-click="addRow()" prevent-default="">
+				<localize key="general_add" class="ng-isolate-scope ng-scope">Add</localize>
+			</a>
+		</li>
+	</ul>
 </div>
