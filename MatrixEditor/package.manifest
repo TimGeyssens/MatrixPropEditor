@@ -32,8 +32,8 @@
 					]
 				},
 				{
-					label: "Add rows",
-					description: "Let user add rows",
+					label: "Manage rows",
+					description: "Let user add/remove rows",
 					key: "addrows",
 					view: "boolean"
 				},				
