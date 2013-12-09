@@ -17,7 +17,11 @@ angular.module("umbraco")
          }
 
 		$scope.addRow = function(){
-			$scope.model.value.push(createArray(cols))
+			$scope.model.value.push(createArray(cols));
+		}
+
+		$scope.removeRow = function(index){
+			$scope.model.value.splice(index, 1);
 		}
 
 		 function createArray(length) {
