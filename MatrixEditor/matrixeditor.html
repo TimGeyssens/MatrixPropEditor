@@ -17,7 +17,7 @@
               <td ng-repeat="col in row track by $id($index)">
               	 <input type="text" ng-model="row[$index]">
               </td>
-             	<td ng-show="model.config.addrows">
+             	<td ng-show="model.config.manageRows">
                 <div class="row-buttons">
                   <a href="#" prevent-default ng-click="addRow($index)" ng-show="canAddRow()">
                     <i class="icon icon-add blue"></i>
