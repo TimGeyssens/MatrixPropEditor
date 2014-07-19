@@ -38,6 +38,12 @@
 					view: "boolean"
 				},
 				{
+					label: "Max rows",
+					description: "Max number of rows",
+					key: "maxRows",
+					view: "number"
+				},
+				{
 					label: "Show row labels",
 					description: "Show label for each row",
 					key: "rowlabels",
