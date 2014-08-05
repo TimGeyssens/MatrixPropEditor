@@ -33,9 +33,15 @@
 				},
 				{
 					label: "Manage rows",
-					description: "Let user add/remove rows",
-					key: "addrows",
+					description: "Let user add/remove and sort rows",
+					key: "manageRows",
 					view: "boolean"
+				},
+				{
+					label: "Max rows",
+					description: "Max number of rows",
+					key: "maxRows",
+					view: "number"
 				},
 				{
 					label: "Show row labels",
